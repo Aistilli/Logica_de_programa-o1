@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+
+<script>
+    document.write("A idade do André é " + (20 + 10 + 30));
+    document.write("<br>");
+    document.write("Eu acertei: " + ((45/50)*100) + "%");
+     document.write("<br>");
+</script>
+
+
+<script>
+    document.write("Flávio nasceu em " + (2016 - 39) + "<br>");
+    document.write("Joaquim nasceu em " + (2016 - 20) + "<br>");
+    document.write("Barney nasceu em " + (2016 - 40) + "<br>");
+</script>
+
+
+<script>
+    var ano = 2016;
+    document.write("Flávio tem " + (ano - 1977) + "anos" + "<br>");
+    document.write("Joaquim tem " + (ano - 1996) + "anos" +  "<br>");
+    document.write("Barney tem " + (ano - 1976) + "anos" +  "<br>");
+  
+</script>
+
+<h2>Calcula consumo</h2>
+<h3>Álcool ou Gasolina</h3>
+<script>
+var tanque = 40;
+var caminhoComGasolina = 480;
+var caminhoComAlcool = 300;
+var consumoDeGasolina = caminhoComGasolina / tanque;
+var consumoDeAlcool = caminhoComAlcool / tanque;
+
+document.write("Com gasolina, a autonimia é de " + consumoDeGasolina + " km por litro de gasolina.<br>");
+document.write("Com álcool, a autonimia é de " + consumoDeAlcool + " km por litro de álcool.");
+</script>
+
+<h2>A idade do meu irmão</h2>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(diferenca) {
+        document.write(diferenca);
+        pulaLinha();
+    }
+
+    var diferencaIdade = 40-37;
+    mostra("Nossa diferença de idade é de " + diferencaIdade + " anos.");
+
+</script>
+
+<div>
+<h3>Gerações no Brasil</h3>
+
+<script>
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idadeMediaQuandoTemFilhos = 28;
+    var anosDoDescobrimento = 2021-1500;
+    var geracoes = Math.round(anosDoDescobrimento / idadeMediaQuandoTemFilhos); 
+
+
+    mostra("<big>O Brasil foi descoberto há " + anosDoDescobrimento + " anos.</big>");
+    
+    mostra("O número de gerações no Brasil desde o descobrimento é de " + geracoes + ".");
+
+</script>
+</div>
